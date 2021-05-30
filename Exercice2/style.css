@@ -1,0 +1,82 @@
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+}
+
+.section { 
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 0 0 5px #000;
+  
+}
+
+
+
+.static {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("/Parallax 1.png");
+        transform: translate(0%,-10%);
+}
+
+.stat{
+     transform: translate(0%,0%);
+     transition: transform ease-in 1.8s;
+}
+
+
+.bg1 {
+    width:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/Parallax\ 2.png');
+    transform: translate(0%,100%);
+}
+
+.para{
+     transform: translate(0%,0%);
+     transition: transform ease-in 1.8s;
+}
+
+
+.texte{
+    position: absolute;
+    left:80px;  
+    transform: translate(0%,-120px);  
+}
+.txt{
+    transform: translate(0%,0%);
+     transition: transform ease-in 1.8s;
+}
+
+.text3{
+    align-self:flex-end;
+    margin: 0;
+    text-align: right;
+}
+.text2{
+    font-size: 30px;
+    margin: 0;
+    font-weight: bold;
+}
+.text1{
+    
+    margin: 0;
+}
